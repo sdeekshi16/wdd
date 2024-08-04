@@ -1,0 +1,40 @@
+<html>
+<head><title> Testing Prime Numbers </title>
+<script type="text/javascript">
+
+function prm()
+{
+var a=form1.t1.value;
+const num=parseInt(a);
+var r,s=0,i;
+
+for(i=1;i<=num;i++)
+{
+if (num%i==0)
+{
+s=s+1;
+}
+}
+if(s==2)
+{
+alert("Prime Number");
+}
+else
+{
+alert("Not a prime Number");
+}
+}
+</script>
+
+</head>
+<body onsubmit>
+<p><b>Test whether the inputted No is Prime or not
+</b></p>
+
+<form name="form1">
+<h1> Enter a Number</h1>
+<input type="text" name="t1"></input>
+<input type="button" onclick="prm()" value="Test Prime"></input>
+</form>
+</body>
+</html>

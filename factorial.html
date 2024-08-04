@@ -1,0 +1,28 @@
+<html>
+<head><title> finding factorial </title>
+<script type="text/javascript">
+function fact()
+{
+ var num=form1.n.value;  
+var i;
+var fact = 1;
+for( i = 1;i <= num; i++ )
+{
+fact = fact * i;
+}
+alert("factorial is :"+fact);
+}
+</script>
+
+</head>
+<body>
+<p><b>to find factorial of given number</b></p>
+
+<form name="form1">
+<h1> Enter a Number</h1>
+<input type="number" name="n">
+<button type="button"  onclick="fact()">get factorial</button>
+<br>
+</form>
+</body>
+</html>

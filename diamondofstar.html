@@ -1,0 +1,50 @@
+<html>
+<head>
+<title> Diamond Star</title>
+<script type="text/javascript" language="javascript">
+function A()
+{
+const n = parseInt(f1.t1.value);
+var m,s,b;
+var m=(n+1)/2;
+
+for(var i=1;i<=n;i++)
+{
+if(i<=m)
+{
+s=2*i-1;
+b=m-i;
+}
+else
+{
+s=2*(n-i)+1;
+b=i-m;
+}
+
+for(var j=1;j<=b;j++)
+{
+document.write(" &nbsp");
+}
+for(var j=1;j<=s;j++)
+{
+document.write("*");
+}
+document.write("<br>");
+}
+
+}
+</script>
+</head>
+<body bgcolor="pink">
+<Marquee Direction="Left" behavior="alternate">
+<H1> Diamond of Stars</h1>
+</marquee>
+<form name="f1">
+<H2> Please Enter the number of terms</h2>
+<input type="text" name="t1">
+<input type="button" onclick="A()" value="Get the Pattern">
+</form>
+
+</script>
+</body>
+</html>

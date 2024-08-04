@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>palindrome</title>
+    <script>
+        function a()
+        {
+            var n=form1.t1.value;
+            var temp=n;
+            var sum=0;
+            var r;
+            while(n>0)
+            {
+                r=n%10;
+                sum=(sum*10)+r;
+                n=parseInt(n/10);
+            }
+            if(temp==sum)
+            {
+                alert('palindrome');
+            }
+            else{
+                alert('not a palindrome');
+            }
+        }
+    </script>
+    <body>
+        <form name="form1" onsubmit="a()">
+        enter number:<input type="text" name="t1">
+        <input type="submit" value="submit">
+        </form>
+    </body>
+</head>
+</html>
